@@ -11,11 +11,11 @@ def try_GET():
 
     match code:
         case 200:
-            print(f"{file} is exposed to the public.")
+            print(f"{url} is exposed to the public.")
         case 404:
-            print(f"{file} is secure.")
+            print(f"{url} is secure.")
         case 403:
-            print(f"Access forbidden. But {file} is exposed")
+            print(f"Access forbidden. But {url} is exposed")
         case 503:
             print("Service Unavailable")
         case _:
